@@ -79,7 +79,7 @@ class App extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     if (this.state.location !== prevState.location) {
       this.fetchWeather();
-      // localStorage.setItem("location", this.state.location);
+      localStorage.setItem("location", this.state.location);
     }
   }
 
